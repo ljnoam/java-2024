@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "animal.Main",
+            "projectName": "Sprint Java_a33e07a7"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "produit.Main",
+            "projectName": "Sprint Java_a33e07a7"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "comptebancaire.Main",
+            "projectName": "Sprint Java_a33e07a7"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "personne.Main",
+            "projectName": "Sprint Java_a33e07a7"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "voiture.Main",
+            "projectName": "Sprint Java_a33e07a7"
+        },
+        {
+            "type": "node",
+            "name": "Run Node",
+            "request": "launch",
+            "program": "${workspaceFolder}/DataManipulation.js",
+            "console": "integratedTerminal"
+        }
+    ]
+}
