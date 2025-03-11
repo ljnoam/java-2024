@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class DataManipulation {
     public static void main(String[] args) {
         int[] data = {3, 5, 7, 2, 8, 10, 11, 1, 6, 4};
-        
+
         // Calcul de la moyenne
         double sum = 0;
         for (int value : data) {
@@ -11,7 +11,7 @@ public class DataManipulation {
         }
         double mean = sum / data.length;
         System.out.println("Moyenne: " + mean);
-        
+
         // Tri et médiane
         Arrays.sort(data);
         double median;
@@ -21,7 +21,7 @@ public class DataManipulation {
             median = data[data.length / 2];
         }
         System.out.println("Médiane: " + median);
-        
+
         // Écart-type
         double variance = 0;
         for (int value : data) {
@@ -29,7 +29,7 @@ public class DataManipulation {
         }
         double stdDev = Math.sqrt(variance / data.length);
         System.out.println("Écart-type: " + stdDev);
-        
+
         // Min et Max
         System.out.println("Min: " + data[0]);
         System.out.println("Max: " + data[data.length - 1]);
