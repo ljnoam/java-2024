@@ -1,0 +1,105 @@
+/* 🌟 Styles globaux */
+.root {
+    -fx-background-color: #E3E8EE; /* Gris clair moderne */
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+    -fx-alignment: center;
+    -fx-font-family: "Arial";
+}
+
+/* 📝 Champs de texte */
+.text-field {
+    -fx-pref-width: 100%;  /* S'adapte à la largeur du conteneur */
+    -fx-max-width: 400px;
+    -fx-padding: 10px;
+    -fx-border-color: #B0BEC5;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-background-color: white;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused {
+    -fx-border-color: #2196F3;
+    -fx-border-width: 2px;
+}
+
+/* 🎨 Boutons */
+.button {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 12px 20px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #1976D2;
+}
+
+.button:pressed {
+    -fx-background-color: #1565C0;
+}
+
+/* 📋 TableView */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #B0BEC5;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-min-width: 100%; /* Permet de s’adapter */
+    -fx-max-width: 900px; /* Largeur max sur grand écran */
+    -fx-pref-height: 400px;
+    -fx-min-height: 300px;
+}
+
+/* Ajustement pour occuper toute la largeur */
+.table-view .table-column {
+    -fx-alignment: CENTER-LEFT;
+    -fx-pref-width: 1fr; /* S’adapte en fonction du contenu */
+}
+
+/* En-tête du tableau */
+.table-view .column-header {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER;
+}
+
+/* 🛠 Fix du problème de décalage */
+.table-row-cell {
+    -fx-cell-size: 30px; /* Définit une hauteur uniforme */
+    -fx-alignment: CENTER-LEFT;
+    -fx-padding: 5px;
+}
+
+
+.table-row-cell:odd {
+    -fx-background-color: #F5F5F5;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #64B5F6;
+    -fx-text-fill: white;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #BBDEFB;
+}
+
+/* 📌 Layout des boutons */
+.hbox {
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+
+/* 🎯 Centrer les éléments */
+.vbox {
+    -fx-alignment: center;
+}
