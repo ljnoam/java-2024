@@ -9,12 +9,10 @@
       prefWidth="900" style="-fx-padding: 20px;">
 
     <!-- Carte contenant les champs de saisie -->
-    <StackPane style="-fx-background-color: white; -fx-border-color: #cccccc; -fx-border-radius: 10px; -fx-padding: 20px; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.3, 0, 4);">
-        <VBox spacing="10" alignment="CENTER">
-            <TextField fx:id="nameField" promptText="Nom" prefWidth="300"/>
-            <TextField fx:id="emailField" promptText="Email" prefWidth="300"/>
-        </VBox>
-    </StackPane>
+    <VBox fx:id="inputContainer" styleClass="floating-card" spacing="15" alignment="CENTER">
+        <TextField fx:id="nameField" promptText="Nom"/>
+        <TextField fx:id="emailField" promptText="Email"/>
+    </VBox>
 
     <!-- Boutons centrés -->
     <HBox spacing="20" alignment="CENTER">

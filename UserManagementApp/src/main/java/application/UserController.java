@@ -44,6 +44,7 @@ public class UserController {
         colEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
         loadUsers();
 
+
         // Ajouter un événement pour sélectionner un utilisateur dans le tableau
         userTable.getSelectionModel().selectedItemProperty().addListener((obs, oldSelection, newSelection) -> {
             if (newSelection != null) {
@@ -142,9 +143,10 @@ public class UserController {
     @FXML
     public void resetSearch() {
         searchField.clear();  // Efface la recherche
+        nameField.clear();  // Efface le champ Nom
+        emailField.clear(); // Efface le champ Email
         userTable.getSelectionModel().clearSelection();  // Désélectionne tout
         loadUsers(); // Recharge tous les utilisateurs
     }
-
 
 }

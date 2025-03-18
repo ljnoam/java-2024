@@ -1,10 +1,20 @@
 /* 🌟 Styles globaux */
 .root {
-    -fx-background-color: #E3E8EE; /* Gris clair moderne */
+    -fx-background-color: linear-gradient(to bottom, #3B4252, #1E222A);
     -fx-padding: 20px;
-    -fx-spacing: 15px;
+    -fx-spacing: 20px;
     -fx-alignment: center;
-    -fx-font-family: "Arial";
+    -fx-font-family: "SF Pro Text", "Helvetica Neue", sans-serif;
+}
+
+.floating-card {
+    -fx-background-color: rgba(255, 255, 255, 0.7);  /* Fond blanc translucide (effet verre dépoli) */
+    -fx-background-radius: 12;     /* Coins arrondis */
+    -fx-border-radius: 12;
+    -fx-padding: 20px;
+    -fx-max-width: 450px; /* Réduction de la largeur pour entourer uniquement les inputs */
+    -fx-alignment: center;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 10, 0.2, 0, 4);  /* Ombre douce autour */
 }
 
 /* 📝 Champs de texte */
@@ -12,7 +22,7 @@
     -fx-pref-width: 100%;  /* S'adapte à la largeur du conteneur */
     -fx-max-width: 400px;
     -fx-padding: 10px;
-    -fx-border-color: #B0BEC5;
+    -fx-border-color: #D1D1D6;
     -fx-border-radius: 8px;
     -fx-background-radius: 8px;
     -fx-background-color: white;
@@ -20,7 +30,7 @@
 }
 
 .text-field:focused {
-    -fx-border-color: #2196F3;
+    -fx-border-color: #007AFF;
     -fx-border-width: 2px;
 }
 
@@ -48,7 +58,7 @@
 /* 📋 TableView */
 .table-view {
     -fx-background-color: white;
-    -fx-border-color: #B0BEC5;
+    -fx-border-color: #5ba4c8;
     -fx-border-radius: 10px;
     -fx-background-radius: 10px;
     -fx-min-width: 100%; /* Permet de s’adapter */
